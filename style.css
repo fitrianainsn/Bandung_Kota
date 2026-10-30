@@ -1,0 +1,183 @@
+/* BACKGROUND UTAMA */
+body {
+  background-color: #D6B4F0;
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+}
+
+/* EFEK LINK */
+a:hover {
+  color: #8B286D;
+  font-weight: bold;
+}
+
+a:hover::after {
+  content: "🌷";
+}
+
+/* MENU NAVIGASI */
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  padding: 20px;
+  margin: 0;
+}
+
+/* HEADER UTAMA BANDUNG */
+body > header {
+  background-color: #D6B4F0;
+  color: #542477;
+  padding-top: 5px;
+}
+
+body > header h1 {
+  text-align: center;
+  color: #542477;
+  padding-bottom: 2px;
+}
+
+body > header p {
+  text-align: center;
+  color: #542477;
+  padding: 20px;
+}
+
+/* NAVBAR */
+nav {
+  background-color: #A855C7;
+}
+
+/* POSISI KONTEN */
+main {
+  display: flex;
+  max-width: 1250px;
+  margin: 40px auto;
+  padding: 0 25px;
+  gap: 30px;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+/* AREA LUAR ARTIKEL */
+#content {
+  flex: 3;
+  min-width: 0;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #A855C7;
+  box-shadow: 0 4px 8px #E88ABB;
+  box-sizing: border-box;
+}
+
+/* KOTAK SEJARAH, GEOGRAFIS, WISATA */
+#content article {
+  background-color: #F7C5DF;
+  border: 2px solid #E88ABB;
+  margin-bottom: 55px;
+  padding: 25px;
+  border-radius: 18px;
+  box-sizing: border-box;
+}
+
+#content article:last-child {
+  margin-bottom: 0;
+}
+
+/* JUDUL ARTIKEL */
+#content .subjudul {
+  color: #8B286D;
+  margin-bottom: 20px;
+}
+
+/* GAMBAR ARTIKEL */
+#content .gambar {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  margin: 20px auto;
+  border-radius: 12px;
+}
+
+/* PARAGRAF ARTIKEL */
+#content p {
+  color: #493344;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+/* KOTAK SAMPING */
+aside {
+  flex: 1;
+  min-width: 230px;
+  padding: 20px;
+  background-color: #F7C5DF;
+  border: 2px solid #E88ABB;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(76, 29, 149, 0.15);
+  box-sizing: border-box;
+}
+
+/* HEADER DI KOTAK SAMPING */
+aside article > header {
+  background-color: #F7C5DF;
+  color: #8B286D;
+  padding: 10px;
+}
+
+/* TULISAN KOTAK SAMPING */
+aside .subjudul,
+aside .p1,
+aside figcaption {
+  color: #8B286D;
+}
+
+/* LOGO KOTA BANDUNG */
+aside .gambar {
+  display: block;
+  width: 100px;
+  max-width: 100%;
+  height: auto;
+  margin: 10px auto;
+  object-fit: contain;
+}
+
+/* TABEL INFORMASI */
+aside .tabel {
+  width: 100%;
+  color: #493344;
+}
+
+/* FOOTER */
+footer {
+  background-color: #A855C7;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* TAMPILAN HP */
+@media (max-width: 700px) {
+  main {
+    flex-direction: column;
+    margin: 20px auto;
+    padding: 0 15px;
+  }
+
+  #content,
+  aside {
+    width: 100%;
+    flex: auto;
+  }
+
+  #content article {
+    margin-bottom: 35px;
+    padding: 18px;
+  }
+}
